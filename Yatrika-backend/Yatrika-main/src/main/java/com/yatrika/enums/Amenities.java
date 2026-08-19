@@ -1,0 +1,43 @@
+package com.yatrika.enums;
+
+public enum Amenities {
+	WIFI,
+    FREE_PARKING,
+    VALET_PARKING,
+    AIRPORT_SHUTTLE,
+    CHAUFFEUR_SERVICE,
+
+    SWIMMING_POOL,
+    INDOOR_POOL,
+    SPA,
+    GYM,
+    YOGA_ROOM,
+
+    RESTAURANT,
+    BAR,
+    CAFE,
+    ROOM_SERVICE,
+    BREAKFAST_INCLUDED,
+
+    AIR_CONDITIONING,
+    HEATING,
+    TV,
+    MINIBAR,
+    BALCONY,
+    SEA_VIEW,
+    CITY_VIEW,
+
+    PET_FRIENDLY,
+    WHEELCHAIR_ACCESSIBLE,
+    ELEVATOR,
+    LAUNDRY_SERVICE,
+
+    BUSINESS_CENTER,
+    CONFERENCE_ROOM,
+    BANQUET_HALL,
+
+    KIDS_PLAY_AREA,
+    BABYSITTING,
+    BEACH_ACCESS,
+    GARDEN
+}

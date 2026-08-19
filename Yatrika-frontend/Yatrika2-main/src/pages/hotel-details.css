@@ -1,0 +1,81 @@
+/* Page-level styles for Hotel Details (Phase 1) */
+
+.details-page.container {
+  max-width: 1200px;
+}
+
+.image-gallery {
+  margin-bottom: 24px;
+}
+
+.desktop-collage {
+  gap: 24px;
+  width: 100%;
+}
+
+.image-gallery .hero {
+  flex: 1 1 60%;
+  min-height: 420px;
+  border-radius: 18px;
+  background-size: cover;
+  background-position: center;
+  background-color: #F8F9FA;
+  overflow: hidden;
+}
+
+.image-gallery .thumb-grid {
+  flex: 1 1 40%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 12px;
+}
+
+.image-gallery .thumb {
+  border-radius: 18px;
+  background-size: cover;
+  background-position: center;
+  min-height: 200px;
+  background-color: #F8F9FA;
+}
+
+.placeholder, .carousel-placeholder, .room-img.placeholder {
+  display:flex;align-items:center;justify-content:center;height:100%;color:#6C757D;background:#F8F9FA;border-radius:18px
+}
+
+.carousel-img { max-height: 420px; object-fit: cover; width:100%; border-radius: 12px; }
+
+.hotel-info .category-badge {
+  display:inline-block;padding:6px 12px;border-radius:50px;background:#F8F9FA;color:#C9A227;font-weight:600;margin-bottom:8px;
+}
+
+.hotel-title{font-family:Poppins, sans-serif;font-size:32px;color:#212529;margin:0 0 8px}
+
+.rating-row .stars i{font-size:16px}
+
+.quick-highlights .chip{background:#FFFFFF;border:1px solid #DEE2E6;padding:8px 12px;border-radius:12px;display:inline-flex;align-items:center}
+
+.description .body-text.collapsed{display:-webkit-box;-webkit-line-clamp:4;-webkit-box-orient:vertical;overflow:hidden}
+
+.amenities-section h2{font-family:Poppins, sans-serif;font-size:22px}
+.amenities-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}
+.amenity-chip{background:#FFFFFF;border:1px solid #DEE2E6;padding:12px;border-radius:12px}
+
+@media (max-width: 991px){
+  .amenities-grid{grid-template-columns:repeat(3,1fr)}
+}
+@media (max-width: 767px){
+  .amenities-grid{grid-template-columns:repeat(2,1fr)}
+  .image-gallery .hero{min-height:260px}
+  .image-gallery .thumb{min-height:120px}
+  .hotel-title{font-size:24px}
+}
+
+.room-card.card{border-radius:18px;box-shadow:0 8px 30px rgba(0,0,0,0.08);overflow:hidden}
+.room-img{object-fit:cover;height:100%;width:100%;border-radius:0}
+.room-card .chip{background:transparent;border:1px solid #DEE2E6;padding:6px 8px;border-radius:12px}
+.book-now{background:#0F5132;border-color:#0F5132}
+.book-now:hover{transform:translateY(-2px);box-shadow:0 15px 35px rgba(0,0,0,0.12)}
+
+/* layout spacing */
+.details-rooms{margin-top:48px}
